@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">您的名字</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#photos">我的照片</a></li>
+                <li><a href="#ai-assistant">AI助手</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="card">
+            <img src="your-avatar.jpg" alt="您的头像" class="avatar">
+            <h1>欢迎来到我的个人网站</h1>
+            <p>摄影爱好者 | 前端开发者</p>
+        </section>
+
+        <section id="about" class="card">
+            <h2>关于我</h2>
+            <p>在这里添加您的个人简介，包括您的背景、兴趣和技能等。让访客更好地了解您。</p>
+        </section>
+
+        <section id="photos" class="card">
+            <h2>我的照片</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- 照片将通过JavaScript动态添加 -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>联系我</h2>
+            <p>电子邮件：your.email@example.com</p>
+            <p>电话：+86 123 4567 8900</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-weibo"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-qq"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <div id="ai-assistant" class="ai-assistant">
+        <div class="ai-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chat-window hidden">
+            <div class="chat-header">
+                <h3>AI助手</h3>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="输入您的问题...">
+                <button class="send-message">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 您的名字. 保留所有权利。</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
